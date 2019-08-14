@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Моё утро</string>
+
+    <string name="main_menu_text">НОВЫЕ ЦИТАТЫ КАЖДЫЙ ДЕНЬ</string>
+
+    <string name="menu_item_11">ПОЖЕЛАНИЯ</string>
+    <string name="menu_item_12">ДОБРОГО УТРА</string>
+
+    <string name="menu_item_21">ПРАВИЛА</string>
+    <string name="menu_item_22">ЭТИКЕТА</string>
+
+    <string name="menu_item_31">ПРАВИЛА</string>
+    <string name="menu_item_32">МОДЫ</string>
+
+    <string name="menu_item_41">О ПРИЛОЖЕНИИ</string>
+    <string name="menu_item_42">ПОЛИТИКА\nКОНФ-ТИ</string>
+
+    <string name="pref">sp</string>
+    <string name="fl">firstLaunch</string>
+
+    <string name="explanation">В приложении\nты сможешь каждый\nдень получать\nпожелание\nдоброго утра,\nправила этикета\nи моды.\nДля того чтобы\nпереключатся\nмежду категориями\n\"пожелания\", \"мода\"\nи \"этикет\"\nсвайпай\nвлево и вправо.</string>
+    <string name="channel_name">goodmorninglove</string>
+    <string name="channel_description">Доброе утро</string>
+    <string name="notification_title">Фраза дня</string>
+    <string name="CloseFirstlaunchCrossDescription">Закрыть</string>
+    <string name="default_phrase">Я знаю, твоя безумная непредсказуемость принесет тебе счастье сегодня.</string>
+    <string name="intro_text"> GOOD MORNING </string>
+    <string name="motto">Наслаждайся каждым днём!</string>
+
+</resources>

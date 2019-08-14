@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#FFF6E5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="menu_color_title">#CC8EBA</color>
+    <color name="menu_color_1">#9781C2</color>
+    <color name="menu_color_2">#FFFFFF</color>
+    <color name="menu_color_text_shadow">#050202</color>
+
+    <color name="menu_shadow_color">#490420</color>
+
+    <color name="menu_color_background">#88AAAAAA</color>
+    <color name="desc_color">#013300</color>
+
+    <!--#478506-->
+    <color name="splash_color">#FFFFFF</color>
+    <color name="splash_shadow_color">#050202</color>
+
+    <color name="category_title_color">#050202</color>
+    <color name="category_title_back_color">#88CCCCB8</color>
+
+    <color name="motto_color">#050202</color>
+    <color name="motto_back_color">#88CCCCB8</color>
+
+
+    <color name="phrase_color_1">#888C8280</color>
+    <color name="phrase_color_2">#881D3424</color>
+    <color name="phrase_color_3">#88A075A3</color>
+
+</resources>

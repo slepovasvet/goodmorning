@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "432588878216",
+    "firebase_url": "https://gml2-4cc35.firebaseio.com",
+    "project_id": "gml2-4cc35",
+    "storage_bucket": "gml2-4cc35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432588878216:android:abca75da9e71e122",
+        "android_client_info": {
+          "package_name": "ru.slepova.goodmorning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432588878216-7g97ll4pcdcmtjsga1l746me4rvgohoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbcTCeroq7c7-PvC5dld38y6nOYOnjhCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432588878216-7g97ll4pcdcmtjsga1l746me4rvgohoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
