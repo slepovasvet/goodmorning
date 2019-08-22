@@ -1,8 +1,11 @@
 package ru.slepova.goodmorning;
 
+import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.Window;
 import android.view.WindowManager;
@@ -61,19 +64,16 @@ public class PhraseActivity extends FragmentActivity {
 
         setContentView(R.layout.activity_phrase);
 
-        if (!isTestDevice()) {
-            // AdView
-            Bundle extras = new Bundle();
-            extras.putString("max_ad_content_rating", "G");
-            mAdView = findViewById(R.id.adView);
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice("95285DCBF50AE5CF9AC3FDE490DD2B70")
-                    .addNetworkExtrasBundle(AdMobAdapter.class, extras)
-                    .build();
-            mAdView.loadAd(adRequest);
+        Intent data = getIntent();
+        categoryId = data.getIntExtra(MainActivity.phraseCategoryId, -1);
+        int notification = data.getIntExtra("notification", 0);
+        if(notification != 0){
+            NotificationManager notificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            if (notificationManager != null) {
+                notificationManager.cancelAll();
+            }
         }
-
-        categoryId = getIntent().getExtras().getInt(MainActivity.phraseCategoryId);
 
         final SimpleDateFormat fmt = new SimpleDateFormat("dd.MM.yyyy");
         String today = fmt.format(new Date());
@@ -106,15 +106,11 @@ public class PhraseActivity extends FragmentActivity {
 
         if (categoryId != -1) {
             mPager.setCurrentItem(categoryId-1);
-
             final LinearLayout phrase_big_layout = findViewById(R.id.phrase_big_layout);
             phrase_big_layout.setBackgroundResource(new Pictures().Ids.get(categoryId).get(DailyResources.get(categoryId).image_id));
         }
-    }
 
-    private boolean isTestDevice() {
-        String testLabSetting = Settings.System.getString(getContentResolver(), "firebase.test.lab");
-        return "true".equals(testLabSetting);
+        loadAdMob();
     }
 
     public static DailyResources GetDailyResources(Context context, int categoryId, String day) {
@@ -227,5 +223,11 @@ public class PhraseActivity extends FragmentActivity {
         public int getCount() {
             return NUM_PAGES;
         }
+    }
+
+    private void loadAdMob() {
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 }
