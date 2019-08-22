@@ -22,7 +22,7 @@ public class RestartAlarmService extends BroadcastReceiver {
     public void onReceive(Context context, Intent i) {
         final SharedPreferences sPref = context.getSharedPreferences("AppDB", MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
-        ed.putLong("INSTALL_TIMESTAMP",  System.currentTimeMillis());
+        ed.putLong("ALARM_TIMESTAMP",  System.currentTimeMillis());
         ed.apply();
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());

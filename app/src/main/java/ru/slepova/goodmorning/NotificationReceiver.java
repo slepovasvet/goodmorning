@@ -38,7 +38,7 @@ public class NotificationReceiver extends BroadcastReceiver  {
     //Hide obsolete notifications
     private boolean skippingOutdatedNotification() {
         SharedPreferences sPref = context.getSharedPreferences("AppDB", MODE_PRIVATE);
-        long installTimestamp = sPref.getLong("INSTALL_TIMESTAMP", 0) +300000L;
+        long installTimestamp = sPref.getLong("ALARM_TIMESTAMP", 0) +300000L;
         return installTimestamp > System.currentTimeMillis();
     }
 
