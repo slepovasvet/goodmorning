@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public static final String phraseCategoryId = "phraseCategoryId";
     private static final int TIME_OUT = 4000;
-    private static final String AskForReviewMomentTag = "launchDatetime";
     private Context mContext;
     private int firstLaunch;
 

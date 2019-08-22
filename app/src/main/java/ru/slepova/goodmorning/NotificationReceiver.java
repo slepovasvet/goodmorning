@@ -29,12 +29,10 @@ public class NotificationReceiver extends BroadcastReceiver  {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED)) {
-            this.context = context;
-            if(skippingOutdatedNotification()) return;
-            createNotificationChannel(context);
-            createNotification();
-        }
+        this.context = context;
+        if(skippingOutdatedNotification()) return;
+        createNotificationChannel(context);
+        createNotification();
     }
 
     //Hide obsolete notifications
