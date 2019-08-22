@@ -66,7 +66,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     root2.setVisibility(View.VISIBLE);
                     long timeMillis = 2380713120L + System.currentTimeMillis();
                     SharedPreferences.Editor ed = sPref.edit();
-                    ed.putLong("ALARM_TIMESTAMP",  System.currentTimeMillis());
                     ed.putLong("LAST_TIMESTAMP", timeMillis);
                     ed.putInt("FIRST_LAUNCH", 0);
                     ed.apply();
@@ -119,8 +118,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.menu_item_42:
                 try {
                     String url = "https://sites.google.com/view/verygoodmorning";
-                    Uri webpage = Uri.parse(url);
-                    Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                    Uri webPage = Uri.parse(url);
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, webPage);
                     startActivity(myIntent);
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(mContext, "No application can handle this request. Please install a web browser.",  Toast.LENGTH_LONG).show();

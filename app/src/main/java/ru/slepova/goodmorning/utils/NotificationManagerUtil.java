@@ -55,6 +55,7 @@ public class NotificationManagerUtil {
 
     private void regAlarmNotification() {
         SharedPreferences.Editor ed = sPref.edit();
+        ed.putLong("ALARM_TIMESTAMP",  System.currentTimeMillis());
         ed.putInt("NOTIFICATION_ALARM", 1);
         ed.apply();
     }
