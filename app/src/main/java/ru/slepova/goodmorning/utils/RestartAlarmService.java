@@ -1,4 +1,4 @@
-package ru.slepova.goodmorning;
+package ru.slepova.goodmorning.utils;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
@@ -10,10 +10,12 @@ import android.content.SharedPreferences;
 
 import java.util.Calendar;
 
+import ru.slepova.goodmorning.NotificationReceiver;
+
 import static android.content.Context.ALARM_SERVICE;
 import static android.content.Context.MODE_PRIVATE;
 
-public class RestartAlarmsService extends BroadcastReceiver {
+public class RestartAlarmService extends BroadcastReceiver {
 
     @SuppressLint("UnsafeProtectedBroadcastReceiver")
     @Override
