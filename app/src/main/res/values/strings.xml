@@ -27,4 +27,14 @@
     <string name="intro_text"> GOOD MORNING </string>
     <string name="motto">Наслаждайся каждым днём!</string>
 
+    <string name="notification_channel_name">Ежедневные уведомления</string>
+    <string name="notification_channel_description">Ежедневные уведомления с пожеланием доброго дня, правилами этикета и о моде</string>
+    <string name="notification_one">Пожелание</string>
+    <string name="notification_two">Этикет</string>
+    <string name="notification_three">Мода</string>
+    <string name="like_app">Вам нравится это приложение?</string>
+    <string name="yes">Да</string>
+    <string name="not">Нет</string>
+    <string name="ad_review">Хотите оставить отзыв?</string>
+
 </resources>
