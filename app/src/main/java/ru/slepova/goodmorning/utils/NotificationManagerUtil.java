@@ -42,7 +42,7 @@ public class NotificationManagerUtil {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.set(Calendar.HOUR_OF_DAY, 7);
-        calendar.set(Calendar.MINUTE, 3);
+        calendar.set(Calendar.MINUTE, 0);
         Intent intent = new Intent(context, NotificationReceiver.class);
         PendingIntent alarmIntentRTC = PendingIntent.getBroadcast(context, 101, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManagerRTC = (AlarmManager)context.getSystemService(ALARM_SERVICE);
